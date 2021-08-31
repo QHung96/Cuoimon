@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link href="css/main.css" rel="stylesheet">
+<!--	icon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	
+	
+
+	<div class="container">
+		<div id="mySidenav" class="sidenav">
+			<b>
+  <a href="image/Slide40.jpg" id="about">Thực đơn</a>
+  <a href="index3.html" id="blog">Đăng nhập</a>
+  <a href="index2.html" id="projects">Thông tin</a>
+  <a href="#" id="contact">Liên hệ</a>
+				</b>
+</div>
+
+<div style="margin-left:80px;">
+ 
+</div>
+		
+		
+		<a href="#">
+ <b>  <i>  <p>www.sacviet.com.vn</p></i></b	>
+			</a
+			
+		
+		
+	<div class="header">
+		<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="image/Slide5.jpg" style="width:100%">
+  <div class="text">Giới Thiệu</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="image/Slide19.jpg" style="width:100%">
+  <div class="text">Đồng phục</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="image/Slide38.jpg" style="width:100%">
+  <div class="text">Thực đơn</div>
+</div>
+	  
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="image/Slide48.jpg" style="width:100%">
+  <div class="text">Thực đơn</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="image/Slide49.jpg" style="width:100%">
+  <div class="text">Thực đơn</div>
+</div>
+	  
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="image/Slide50.jpg" style="width:100%">
+  <div class="text">Thực đơn</div>
+</div>
+	  
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="image/Slide45.jpg" style="width:100%">
+  <div class="text">Thực đơn</div>
+</div>
+	  
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="image/Slide44.jpg" style="width:100%">
+  <div class="text">Thực đơn</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+</div>
+</div>
+	<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		
+		<div class="dropdown">
+  <button class="dropbtn"><b>ĐẶT BÀN</b></button>
+  <div class="dropdown-content">
+    <a href="#">Bàn 2 người</a>
+    <a href="#">Bàn tập thể</a>
+    <a href="#">Phòng VIP</a>
+  </div>
+			
+</div>
+
+		
+			
+
+		
+			
+
+
+	
+	
+	
+<!--script menu-->
+	<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!--		script slide-->
+		<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+			<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-youtube"></a>
+
+
+</div>
+		
+		
+		
+		
+
+
+</body>
+</html>
